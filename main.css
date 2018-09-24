@@ -1,0 +1,929 @@
+body
+{
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: Arvo, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'lovelo';
+    src: url(fonts/lovelo_black-webfont.eot);
+    src: url(fonts/lovelo_black-webfont.otf) format('opentype'), url(fonts/lovelo_black-webfont.woff) format('woff'), url(fonts/lovelo_black-webfont.ttf) format('truetype'), url(fonts/lovelo_black-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fixedtop
+{
+	margin: 0;
+	padding: 0;
+	height: 33px;
+	border-bottom: 1px solid #7c7c7c;
+	background: #cfcfcf;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	position: fixed;
+}
+
+.fixedtop ul
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+}
+
+.fixedtop ul li a
+{
+	display: inline-block;
+	height: 20px;
+	padding: 0 15px;
+	margin: 7px 6px 0;
+	font: normal bold 11px/19px Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #7c7c7c;
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.75);
+}
+
+.top
+{
+	width: 85%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+	padding: 10px;
+}
+
+.logo
+{
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 50px;
+}
+
+input[type=text]
+{
+	width: 200px;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding: 7px;
+	border: 1px solid #e0e0e0;
+	border-radius: 15px;
+}
+input[type=text]:focus { outline: none; }
+
+::-webkit-input-placeholder {
+  color: #d2d2d2;
+}
+::-moz-placeholder { 
+  color: #d2d2d2;
+}
+:-ms-input-placeholder { 
+  color: #d2d2d2;
+}
+:-moz-placeholder {
+  color: #d2d2d2;
+}
+
+#search
+{
+    position: relative;
+    z-index: 1;
+    left: -40px;
+    top: 1px;
+    color: #7B7B7B;
+    cursor:pointer;
+    width: 0;
+	color: #000;
+}
+
+#user { margin-left: 25px; margin-top: 15px; font-size: 15px; }
+#shop { margin-left: 25px; margin-top: 15px; }
+
+.account
+{
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+}
+
+.account p { padding: 0; margin: 15px 0 0 7px; }
+
+.shopping
+{
+	display: flex;
+	margin-top: 0px;
+}
+.shopping p { padding: 0; margin: 0; line-height: 50px; }
+#result { padding: 0 0 0 5px; margin: 0; line-height: 50px; }
+
+button
+{
+	cursor: pointer;
+	margin-top: 9px;
+	margin-left: 25px;
+	border: solid 1px #efefef;
+	border-radius:30px;
+	width: 100px;
+	height:30px;
+	font-weight: bold;
+	background-image: linear-gradient(#ffa353, #ff5800);
+}
+button:focus { outline: none; }
+button p
+{
+	font-family: 'lovelo';
+	color: #fff;
+	margin: 0 !important;
+	padding: 0;
+	font-size: 12px;
+}
+
+.motto
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	height: 15px;
+}
+.motto h6
+{ 
+	margin: 0 0 0 35px;
+	position: relative;
+	color: #cbcbcb;
+	font-size: 400;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.motto h6:after 
+{
+   display: inline-block;
+   content: "";
+   height: 1px;
+   background: #d2d2d2;
+   position: absolute;
+   width: 83%;
+   top: 60%;
+   margin-top: -2px;
+   margin-left: 10px;
+}
+
+.nav
+{
+	width: 80%;
+	margin: 25px 0 0 50px;
+}
+
+.nav ul
+{
+	display: flex;
+	list-style-type: none;
+}
+
+.nav ul li
+{
+	font-size: 12px;
+	margin-left: 30px;
+}
+
+.nav ul li a
+{
+	text-decoration: none;
+	color: #000;
+	font-family: 'lovelo';
+}
+
+.fas
+{
+	margin-left: 7px;
+}
+
+.baner
+{
+	background-color: #e0e0e0;
+	width: 100%;
+	height: 550px;
+	text-align: center;
+	position: relative;
+}
+
+.baner_content
+{
+    width: 95.6%;
+    height: 450px;
+	display: block;
+    border: 5px solid #f7f4f4; 
+	border-right: none;
+	position: absolute;
+	top: 8.5%;
+	left: 4%;
+}
+
+.baner_content h2
+{
+	font-family: 'lovelo';
+	padding: 0;
+	margin: 0 0 0 70px;
+	font-size: 48px;
+	width: 400px;
+	color: #fff;
+}
+
+.baner_content p
+{
+	padding: 15px 0 0 0 ;
+	margin: 0 0 0 70px;
+	font-size: 16px;
+	opacity: 0.7;
+	color: #666;
+}
+
+.left_baner
+{
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 450px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.baner_button
+{
+	cursor: pointer;
+	margin-top: 40px;
+	margin-left: 70px;
+	border-radius:30px;
+	border: none;
+	width: 180px;
+	height:30px;
+	font-weight: bold;
+	border: 1px solid #efefef;
+	background-image: linear-gradient(#fff, #efefef);
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+	box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+}
+.baner_button:focus { outline: none; }
+.baner_button p
+{
+	font-family: 'lovelo';
+	color: #000;
+	margin: 0 !important;
+	padding: 0;
+	font-size: 12px;
+}
+
+.she
+{
+	width: 400px;
+	height: 550px;
+	float: right;
+	background-image: url(img/she.png);
+	padding-right: 170px;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.last_views
+{
+	height: 96px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	border-bottom: 1px solid lightgray;
+}
+
+.last_views h4
+{
+	margin-right: 35px;
+	font-family: 'lovelo';
+	font-size: 14px;
+	line-height: 50px;
+}
+
+.imgcont
+{
+	width: 95px;
+	height: 95px;
+	border: 1px solid lightgray;
+	border-top: none;
+	border-bottom: none;
+	text-align: center;
+	line-height: 150px;
+	border-right: none;
+}
+
+.last_views img
+{
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+	max-height: 65px;
+}
+
+.last_views > .imgcont:last-child
+{
+	border-right: 1px solid lightgray;
+}
+
+.middle_menu
+{
+	margin: 20px 0 0 0 ;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.middle_menu ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+.middle_menu ul li
+{
+	margin-left: 30px;
+}
+.middle_menu ul li a { text-decoration: none; font-family: 'lovelo'; color: #000; font-size: 18px; opacity: 0.5; }
+
+.middle_menu ul li a:active
+{
+	opacity: 1;
+}
+
+#recomendes { font-size: 10px; position: relative; bottom: 3px; }
+
+.middle_menu:before
+{
+   display: inline-block;
+   content: "";
+   height: 1px;
+   background: #d2d2d2;
+   width: 25%;
+   top: 47%;
+   position: absolute;
+   margin-left: -380px;
+}
+
+.middle_menu:after
+{
+   display: inline-block;
+   content: "";
+   height: 1px;
+   background: #d2d2d2;
+   width: 25%;
+   top: 47%;
+   position: absolute;
+   margin-left: 400px;
+}
+
+.content
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.offers
+{
+	display: flex;
+	justify-content: space-around;
+}
+.offer img { border-bottom: 1px solid #d2d2d2; padding-bottom: 15px; width: 100%; max-width: 240px; height: auto; max-height: 318px; padding-bottom: 0; margin-bottom: 0; }
+
+.price { text-align: justify; }
+.price h5 { padding: 10px 0 0 0 ; margin: 0; font-family: 'lovelo'; }
+.price p { font-family: havana; padding: 5px 0 0 0; margin: 0; font-size: 16px; color:gray; font-weight: 400; }
+
+.buy
+{
+	cursor: pointer;
+	margin-top: 40px;
+	border-radius:30px;
+	border: none;
+	width: 180px;
+	height:30px;
+	font-weight: bold;
+	border: 1px solid #efefef;
+	background-image: linear-gradient(#d8d8d8, #e0e0e0);
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+	box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+}
+.buy:focus { outline: none; }
+.buy p
+{
+	font-family: 'lovelo';
+	color: #000;
+	margin: 0 !important;
+	padding: 0;
+	font-size: 12px;
+}
+
+.check
+{
+	display: flex;
+	justify-content: center;
+	margin: 10px 0 0 0;
+	padding: 0;
+	display: none;
+}
+
+.button_more { display: flex; justify-content: center; width: 100%; }
+
+.more
+{
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	margin-top: 55px;
+	border-radius:30px;
+	border: none;
+	width: 250px;
+	height:30px;
+	font-weight: bold;
+	border: 1px solid #efefef;
+	background-image: linear-gradient(#fff, #efefef);
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+	box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+}
+.more:focus { outline: none; }
+.more p
+{
+	font-family: 'lovelo';
+	color: #000;
+	margin: 0 !important;
+	padding: 0;
+	font-size: 10px;
+}
+
+.footer
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer
+{
+	width: 85%;
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid #efefef;
+}
+
+.about
+{
+	width: 200px;
+	padding: 15px;
+}
+.about h4 { font-family: 'lovelo'; font-size: 16px; padding-left: 20px; }
+
+.about ul 
+{
+	list-style-type: none;
+	padding-left: 20px;
+}
+.about ul li { margin-top: 10px; }
+.about ul li a
+{
+	text-decoration: none;
+	color: #000;
+	margin-top: 100px;
+	font-size: 14px;
+}
+
+.payment
+{
+	padding: 15px;
+	margin: 0;
+	width: 300px;
+	text-align: justify;
+}
+
+.payment h4 { font-family: 'lovelo', sans-serif; font-size: 16px; padding-left: 20px; }
+
+.payment p 
+{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	opacity: 0.6;
+}
+
+.newsletter
+{
+	padding: 15px;
+	margin: 0;
+	width: 300px;
+}
+
+.newsletter h4 { font-family: 'lovelo', sans-serif; font-size: 16px; }
+
+#news
+{
+	display: flex;
+}
+
+.number
+{
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	color: gray;
+}
+
+#mail 
+{
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.reserved
+{
+	margin: 30px 0 0 105px;
+	width: 300px;
+	height: 70px;
+}
+
+.reserved p 
+{
+	margin: 0;
+	padding: 5px 0 0 0;
+	color: gray;
+	font-size: 12px;
+}
+
+.navbar_toggler
+{
+	display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+	
+	body
+	{
+		overflow-x: hidden;
+	}
+	
+	input[type=text]
+	{
+	width: 100px;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding: 7px;
+	border: 1px solid #e0e0e0;
+	border-radius: 15px;
+	}
+	input[type=text]:focus { outline: none; }
+	#search 
+	{
+		display: none;
+	}
+	
+	.left_baner
+	{
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	height: 450px;
+	display: table-cell;
+	vertical-align: middle;
+	}
+	
+	.baner_content h2
+	{
+	font-family: 'lovelo';
+	padding: 0;
+	margin: 0 0 0 30px;
+	font-size: 48px;
+	width: 400px;
+	color: #fff;
+	}
+
+.baner_content p
+	{
+	padding: 15px 0 0 0 ;
+	margin: 0 0 0 30px;
+	font-size: 16px;
+	opacity: 0.7;
+	color: #666;
+	}
+	
+	.baner_button p
+{	
+	font-family: 'lovelo';
+	color: #000;
+	margin: 0 !important;
+	padding: 0;
+	font-size: 12px;
+	}
+	
+	.she
+	{
+	width: 400px;
+	height: 550px;
+	float: right;
+	background-image: url(img/she.png);
+	padding-right: 120px;
+	background-repeat: no-repeat;
+	position: relative;
+	}
+	
+	.last_views
+{	
+	height: 96px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	border-bottom: 1px solid lightgray;
+	}
+
+	.last_views h4
+	{
+	margin-right: auto;
+	margin-left: 40px;
+	font-family: 'lovelo';
+	font-size: 14px;
+	line-height: 25px;
+	}
+	
+	.offer img { border:none; padding-bottom: 15px; width: 100%; max-width: 240px; height: auto; max-height: 318px; padding-bottom: 0; margin-bottom: 0; }	
+}
+
+@media only screen and (max-width: 998px) {
+	
+	
+	.top
+	{
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		width: 100%;
+		height: 55px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.account
+	{
+		display: none;
+	}
+	
+	#user, #your_account { display: none; }
+	.logo
+	{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		background-image: url(img/logo.png);
+		background-repeat: no-repeat;
+		width: 250px;
+		height: 50px;
+	}
+	
+	.motto
+	{
+		display: none;
+	}
+	
+	.navbar_toggler
+	{
+		display: block;
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		cursor: pointer;
+		opacity: 0.8;
+		margin: 7px 20px 7px 0px;
+		opacity: 0.7;
+	}
+	
+	.navbar_toggler:hover
+	{
+		opacity: 1;
+	}
+	
+	.she
+	{
+		display: none;
+	}
+	
+	.left_baner
+	{
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		width: auto;
+		height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+	.baner_button
+	{
+		margin-left: 0;
+		margin-top: 15px;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		padding: 0;
+		border-radius:30px;
+		border: none;
+		width: 180px;
+		height:30px;
+		font-weight: bold;
+		border: 1px solid #efefef;
+		background-image: linear-gradient(#fff, #efefef);
+		-webkit-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+		-moz-box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+		box-shadow: 0px 0px 1px 1px rgba(255,15,NaN,1);
+	}
+	
+	.baner_button p
+	{
+		padding: 0 !important;
+	}
+	
+	.baner
+	{
+		background-color: #e0e0e0;
+		width: auto;
+		height: 300px;
+		text-align: center;
+		position: relative;
+	}
+
+	.baner_content
+	{
+		width: 94%;
+		height: 200px;
+		display: block;
+		border: 5px solid #f7f4f4;
+		border-right: none;	
+		position: absolute;
+		top: 14%;
+		left: 4%;
+	}
+	
+	.baner_content h2
+	{
+		font-family: 'lovelo';
+		padding: 0;
+		margin: 0 0 0 0px;
+		font-size: 18px;
+		width: 300px;
+		color: #fff;
+	}
+
+	.baner_content p
+	{
+		padding: 15px 0 0 0 ;
+		margin: 0 0 0 0px;
+		font-size: 14px;
+		opacity: 0.7;
+		color: #666;
+		width: 270px;
+	}
+	
+	.last_views
+	{
+		display: none;
+	}
+	
+	.offers
+	{
+		display: inline-flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.footer
+	{
+		justify-content: center;
+		flex-wrap: wrap;
+		
+	}
+	
+	.about
+	{
+		width: 307px;
+		text-align: justify;
+	}
+	.about ul, .about h4, .payment h4 { padding: 0; }
+	
+	.reserved
+	{
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		margin: 30px 0 0 30px;
+	}
+	
+	.middle_menu
+	{
+		margin: 20px 0 0 0;
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	
+	.middle_menu ul li 
+	{
+		margin-left: 15px;
+	}
+	
+	.middle_menu ul li a
+	{
+		font-size: 15px;
+	}
+	
+	.fixedtop
+	{
+		margin: 0;
+		padding: 0;
+		height: 33px;
+		border-bottom: 1px solid #7c7c7c;
+		background: #cfcfcf;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: relative;
+	}
+	
+	.nav
+	{
+		margin: 0;
+		border-sizing: border-box;
+		display: none;
+		position: relative;
+	}
+
+	.nav ul
+	{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.nav ul li
+	{
+		font-size: 16px;
+		margin: 10px 0 0 30px;
+	}
+
+	.nav ul li a
+	{
+		text-decoration: none;
+		color: #000;
+	}
+	
+	.middle_menu:before
+	{
+		display: none;
+	}
+
+	.middle_menu:after
+	{
+		display: none;
+	}
+	
+	
+}
+
+
+
+
+
+
+
